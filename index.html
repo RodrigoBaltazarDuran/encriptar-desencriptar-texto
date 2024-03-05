@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7e55e8c0f3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://iconos8.es/icon/1tXrXAVjTVo6/encryption" type="image/x-icon">
+</head>
+<body>
+    <div class="contenido">
+        <div class="encriptador-body">
+            <img src="assets/img/Logo.png" alt="logo de alura" width="100px" />
+            <div class="encriptador-info">
+                <textarea name="encriptador" cols="10" rows="10" placeholder="Ingrese el texto aquí" id="textoEntrada"></textarea>
+                <div class="encriptador-botones">
+                    <p class="alerta ocultar" id="alerta">texto no valido, solo letras minúsculas y sin acentos</p>
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+                    <button type="button" class="btn-encriptar" id="btnEncriptar">Encriptar</button>
+                    <button type="button" class="btn-desencriptar" id="btnDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="encriptador-ilustrativo" id="encriptadorIlustrativo">
+            <img src="assets/img/muneco.png" alt="imagen ilustrativa" />
+            <div>
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+        <div class="encriptador-resultado ocultar" id="encriptadorResultado">
+            <p id="textoSalida">resultado</p>
+            <button type="button" class="btn-copiar" id="btnCopiar">Copiar</button>
+        </div>
+    </div>
+    <p class="copy">&copy Power by Rodrigo Durán 2024</p>
+    <script src="app.js"></script>
+</body>
+</html>

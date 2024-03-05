@@ -1,0 +1,138 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height:100%
+}
+body {
+    background-color: #F3F5FC;
+}
+.contenido {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 90vh;
+    padding: 2rem;
+    gap: 3rem;
+}
+.encriptador-body {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.encriptador-info {
+    width: 90%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.encriptador-botones > p:last-child {
+    font-size: 12px;
+    color: #495057;
+    padding-bottom: 0.5rem;
+}
+.encriptador-botones > button, .encriptador-resultado > button {
+    font-size: 16px;
+    padding: 1.5rem 2rem;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+.btn-encriptar {
+    width: 40%;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    margin-right: 1rem;
+}
+.btn-desencriptar {
+    width: 40%;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.btn-copiar {
+    width: 80%;
+    background-color: #FFFFFF;
+    color: #0A3871;
+}
+.encriptador-ilustrativo, .encriptador-resultado {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 19px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 19px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 19px 25px -6px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+}
+.encriptador-resultado {
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.encriptador-ilustrativo {
+    justify-content: center;
+    align-items: center;
+}
+.encriptador-ilustrativo > div {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+.encriptador-ilustrativo > div > p{
+    padding: 0.5rem 0;
+    color: #343A40;
+}
+.encriptador-resultado > p {
+    padding: 2rem;
+    font-size: 24px;
+    color: #343A40;
+}
+.encriptador-ilustrativo > div > p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+.encriptador-ilustrativo > div > p:last-child {
+    font-size: 16px;
+}
+textarea {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    resize: none;
+}
+textarea:focus{
+    outline: 0 none;
+} 
+button:hover {
+    cursor: pointer;
+    transition: 0.1s all;
+    transform: scale(1.05);
+}
+button:active {
+    transition: 0 all;
+    transform: scale(1);
+}
+::placeholder {
+    font-size: 32px;
+    color: #0A3871;
+}
+.copy {
+    margin-right: 2rem;
+    text-align: right;
+    color: #0A3871;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ocultar {
+    display: none;
+}
+.alerta {
+    background-color: #FF101090;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #0A3871;
+    margin-bottom: 1rem;
+}
